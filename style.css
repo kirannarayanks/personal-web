@@ -1,0 +1,164 @@
+*
+{
+    top: 8vh;
+ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    
+}
+nav
+{
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 8vh;
+    background-color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: fixed;
+    z-index: 1;
+}
+.logo
+{
+    color: rgb(254, 253, 255);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family: 'Piedra', cursive;
+}
+.nav-links
+{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-links li
+{
+    list-style: none;
+
+}
+.nav-links a
+{
+    color:  rgb(253, 251, 255);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.burger
+{
+    display: none;
+}
+.burger div
+{
+    width: 25px;
+    height: 5px;
+    background-color: rgb(255, 253, 255);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.welcome
+{
+    margin-top: 8vh;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/blue-and-purple-cosmic-sky-956999.jpg);
+    background-size: cover;
+}
+.welcome div{
+    position: absolute;
+    top: 15em ;
+    left: 25em;
+    color: white;
+    padding: 2em;
+    border-left: 1px solid white;
+    font-family: 'Poppins', sans-serif;
+}
+.bio{
+    padding-top: 8vh;
+    width: 100%;
+    min-height: 50vh;
+    background:linear-gradient(to bottom, rgb(25, 86, 219),white);
+   /* justify-content: space-around;*/
+   font-family: 'Poppins', sans-serif;
+   align-items: center;
+   text-align: center;
+   color: rgb(117, 115, 115);
+    
+}
+.bio h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+}
+.contact
+{
+    width: 100%;
+    height: 92vh;
+    background: linear-gradient(to bottom, white ,rgb(25, 86, 219));
+}
+.contact h1
+{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(25, 86, 219);
+    text-shadow: rgb(0, 0, 0);
+    
+}
+.card
+{
+    margin-top: 2em;
+    margin-left: 8em;
+    width: 80vw;
+    height: 15vh;
+    background-color: rgb(9, 74, 252);
+    border-radius: 1em;
+    box-shadow: 0px 0px 10px 10px rgba(86, 87, 151, 0.459);
+    text-align: center;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    padding-top: 1.5em;
+    
+}
+
+.card h3
+{
+    color: rgb(255, 255, 255);
+}
+.card .fab
+{
+    font-size: 24px;
+    color: white;
+    padding: 8px;
+}
+/*.bio .pic
+{
+    top: 5vh;
+    left: 35px ;
+    position: relative;
+    width:20%;
+    height: 40vh;
+    border: 5px solid rgba(28, 228, 45, 0.548);
+    border-radius: 50%;
+    background-color: white;
+    
+}
+/*.bio .pic img
+{
+    width: 10%;
+    height:10%;
+    
+}
+/*.fa-user-circle
+{
+    font-size: 148px;
+    position: relative;
+    padding-left: .4em;
+    
+
+}*/
