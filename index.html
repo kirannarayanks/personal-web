@@ -34,7 +34,7 @@
             </div>
         </nav>
         <section class="welcome">
-            <div>
+            <div data-0="opacity:1;" data-300="opacity:0;">
                 <p>
                     welcome to my website
                 </p>
@@ -49,8 +49,8 @@
         <section class="bio" id="bio">
             <h1>Bio</h1>
             <br><br>
-            <p>
-                 I am a second year graduate student who has an experience of 3years <br>
+            <p data-100="opacity:0;" data-600="opacity:1;left:0;transition:all 0.3s ease-in" data-1000="opacity:0;top:-200px;">
+                I am a second year graduate student who has an experience of 3years <br>
                  in the field of front-end web designing and now i have the capabilities to<br>
                  do an entire fully functioned responsive static websites.you can contact me <br>
                  if you are looking for a good responsive static websites and more.I can also <br>
@@ -64,7 +64,7 @@
 
             </div>
         </section>
-        <section class="contact" id="contact">
+        <section class="contact" id="contact" data-700="opacity:0; transition:all 0.3s ease-in" data-900="opacity:1;">
             <h1>contact me</h1>
             <div class="card">
                 <h3>
@@ -93,6 +93,10 @@
 
 
         <script src="nav.js"></script>
+        <script src="skrollr.js"></script>
+        <script type="text/javascript">
+            var s = skrollr.init();
+            </script>
         <script src="https://kit.fontawesome.com/fbeaf8d9ec.js" crossorigin="anonymous"></script>
     
 </body>
