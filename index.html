@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Piedra&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <body>
         <nav>
             <div class="logo">
@@ -67,6 +68,7 @@
         </section>
         <section class="contact" id="contact" data-700="opacity:0; transition:all 0.3s ease-in" data-900="opacity:1;">
             <h1>contact me</h1>
+            
             <div class="card">
                 <h3>
                     Address
@@ -99,6 +101,25 @@
             var s = skrollr.init();
             </script>-->
         <script src="https://kit.fontawesome.com/fbeaf8d9ec.js" crossorigin="anonymous"></script>
+     <script>
+        $("#gform").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwGUeFWh_AcWfB2sHcsVxxS9-G2fs-DoCz1U7n3/exec",
+                data:$("#gform").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
     
 </body>
 </html>
