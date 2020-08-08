@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kiran</title>
-     <script data-ad-client="ca-pub-9728545918793452" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Piedra&family=Poppins:wght@500&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<body>
+    <body>
         <nav>
             <div class="logo">
                 kiran
@@ -18,12 +17,12 @@
                 <li>
                     <a href="#">home</a>
                 </li>
-                <li>
+               <!-- <li>
                     <a href="#bio">bio</a>
                 </li>
                 <li>
                     <a href="#services">services</a>
-                </li>
+                </li>-->
                 <li>
                     <a href="#contact">contact</a>
                 </li>
@@ -36,7 +35,7 @@
             </div>
         </nav>
         <section class="welcome">
-            <div data-0="opacity:1;" data-300="opacity:0;">
+            <div data-0-top="opacity:0;" data-100-top="opacity:1;">
                 <p>
                     welcome to my website
                 </p>
@@ -48,7 +47,7 @@
                 </P>
             </div>
         </section>
-        <section class="bio" id="bio">
+       <!-- <section class="bio" id="bio">
             <h1>Bio</h1>
             <br><br>
             <p data-100="opacity:0;" data-600="opacity:1;left:0;transition:all 0.3s ease-in" data-1000="opacity:0;top:-200px;">
@@ -58,35 +57,26 @@
                  if you are looking for a good responsive static websites and more.I can also <br>
                  serve you in web hosting as well as in maintenance of static websites
             </p>
-            <!--<div class="pic">
+            <div class="pic">
                 <p>
                 </p>
                <img src="pro.jpg" alt="technical error">
-               <i class="far fa-user-circle"></i>-->
+               <i class="far fa-user-circle"></i>
 
             </div>
-        </section>
-        <section class="contact" id="contact" data-700="opacity:0; transition:all 0.3s ease-in" data-900="opacity:1;">
+        </section>-->
+        <section class="contact" id="contact" data-00="opacity:0; transition:all 0.3s ease-in" data-200="opacity:1;">
             <h1>contact me</h1>
-            
-            <div class="card">
-                <h3>
-                    Address
-                </h3>
-                <p>
-                <i class="fas fa-map-marker-alt"></i>
-                28/98 ,Ammankovil kuruplavu Cross Road,kochi</p>
-                
-            </div>
-            <div class="card">
-                <i class="fas fa-envelope" style="font-size: 24px;"></i>
-                 kirannarayanks@gmail.com
-
-                
-            </div>
-            <div class="card">
+           <form id="gform" method="POST" action="">
+               <input type="text" name="name" placeholder="enter your name" required> <br>
+               <input type="email" name="email" placeholder="email address" required> <br>
+               <input type="tel" name="phone" placeholder="phone number" required><br>
+               <textarea name="message" id="" cols="50" rows="10" placeholder="drop ur message here"></textarea><br>
+               <input type="submit">
+           </form>
+          <div class="social">
                 <a href="https://www.facebook.com/kiran.narayan.756"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/___kautilya___/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/the_piper_guy/"><i class="fab fa-instagram"></i></a>
                 <a href="https://wa.me/918129091537"><i class="fab fa-whatsapp"></i></a>
                 <a href="https://twitter.com/KiranNarayanKS3"><i class="fab fa-twitter"></i></a>
             </div>
@@ -96,30 +86,30 @@
 
 
         <script src="nav.js"></script>
-      <!--  <script src="skrollr.js"></script>
+        <!--<script src="skrollr.js"></script>
         <script type="text/javascript">
             var s = skrollr.init();
             </script>-->
         <script src="https://kit.fontawesome.com/fbeaf8d9ec.js" crossorigin="anonymous"></script>
-     <script>
-        $("#gform").submit((e)=>{
-            e.preventDefault()
-            $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbwGUeFWh_AcWfB2sHcsVxxS9-G2fs-DoCz1U7n3/exec",
-                data:$("#gform").serialize(),
-                method:"post",
-                success:function (response){
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                    //window.location.href="https://google.com"
-                },
-                error:function (err){
-                    alert("Something Error")
-    
-                }
+        <script>
+            $("#gform").submit((e)=>{
+                e.preventDefault()
+                $.ajax({
+                    url:"https://script.google.com/macros/s/AKfycbwGUeFWh_AcWfB2sHcsVxxS9-G2fs-DoCz1U7n3/exec",
+                    data:$("#gform").serialize(),
+                    method:"post",
+                    success:function (response){
+                        alert("Form submitted successfully")
+                        window.location.reload()
+                        //window.location.href="https://google.com"
+                    },
+                    error:function (err){
+                        alert("Something Error")
+        
+                    }
+                })
             })
-        })
-    </script>
+        </script>
     
 </body>
 </html>
