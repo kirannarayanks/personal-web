@@ -17,7 +17,7 @@
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background: linear-gradient(rgba(41, 74, 219, 0.8),rgba(223, 93, 33, 0.8)) ;
+        background: linear-gradient(rgba(0, 0, 0, 0.788),rgba(255, 81, 0, 0.801)) ;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -32,7 +32,9 @@
     }
     .nav-links li a
     {
-        color: rgb(255, 255, 255);
+        color: rgb(254, 254, 255);
+        font-weight: 300;
+        font-size: 1.5em;
     }
     .burger
     {
@@ -60,6 +62,14 @@
   {
       width: 80%;
       height: 40vh;
+  }
+  .social
+  {
+      width: 70%;
+  }
+  .contact textarea
+  {
+      width: 90%;
   }
 }
 .nav-active
