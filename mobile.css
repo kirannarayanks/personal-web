@@ -4,12 +4,22 @@
     {
         width: 60%;
     }
+    .preloader
+    {
+        padding: 15em;
+    padding-left: 30em;
+    }
 }
 @media screen and (max-width:768px)
 {
     body
     {
         overflow-x: hidden;
+    }
+    .preloader
+    {
+        padding: 15em;
+    padding-left: 8em;
     }
     .nav-links
     {
@@ -66,8 +76,6 @@
   .social
   {
       width: 70%;
-      height:5vh;
-      text-align:center;
   }
   .contact textarea
   {

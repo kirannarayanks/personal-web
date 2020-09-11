@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiran Narayan K S</title>
+    <title>kiran</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Piedra&family=Poppins:wght@500&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head>
-    <body>
+    <script src="load.js"></script>
+</head>
+    <body onload="myfunction()">
+      <div class="preloader" id="preload">
+    <div class="loader"></div>
+</div>
         <nav>
             <div class="logo">
                 kiran
@@ -45,7 +49,7 @@
                     KIRAN NARAYAN K S
                 </h2>
                 <P>
-                    freelancer front-end responsie static web developer 
+                    freelance full stack web developer 
                 </P>
             </div>
         </section>
@@ -83,6 +87,7 @@
                 <input type="email" name="email" placeholder="email address" required> <br>
                 <input type="tel" name="phone" placeholder="phone number" required><br>
                 <textarea name="message" id="" cols="50" rows="10" placeholder="drop ur message here"></textarea><br>
+                <div class="g-recaptcha" data-sitekey="6LefqMYZAAAAAHuUPXbuD0jEUuor003Q6eKxUca9"></div><br>
                 <input type="submit">
             </form>
 
