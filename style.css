@@ -80,16 +80,20 @@ nav
 
 }
 .nav-links a
-{
-    
+{ 
     color:  rgb(253, 251, 255);
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
     font-family: 'Yatra One', cursive;
-    
-    
+    transition: all 1s cubic-bezier(0.9, 1.5, 0.735, 0.045);
+}
+.nav-links a:hover
+{
+    color: #ff3300;
+    transform: translateY(-5px);
+    transition: all 0.8s cubic-bezier(0.6, -1.5, 0.735, 0.045);
 }
 
 .burger
